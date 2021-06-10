@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Example - example-heroComponentSimple-production</title>
+        <script src="/js/policy.js"></script>
+        <script src="angular.min.js"></script>
+        <script src="jquery.min.js"></script>
+    </head>
+    <body>
+        <script>
+        $.ajax({
+            url: "/cgi-bin/GetDiskInfo",
+            type: "GET",
+            dataType: "json",
+            success: function(data) {
+                alert("SUCCESS!!!");
+                console.log(data);
+            },
+            
+            error: function() {
+                alert("ERROR!!!");
+            }
+        });
+        </script>
+    </body>
+</html>

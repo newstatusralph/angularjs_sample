@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Example - example-heroComponentSimple-production</title>
+        <script src="/js/policy.js"></script>
+        <script src="angular.min.js"></script>
+        <script src="jquery.min.js"></script>
+        <script src="index.js"></script>
+        <script src="fatherComponent.js"></script>
+        <script src="sonComponent.js"></script>
+    </head>
+    <body ng-app="heroApp">
+        <!-- components match only elements -->
+        <div ng-controller="MainCtrl as ctrl">
+            hero: {{ctrl.hero.name}}
+            <father-component></father-component>
+        </div>
+    </body>
+</html>
